@@ -258,9 +258,9 @@ body {
 }
 
 .img2 {
-    width: 30%;
-    display: flex;
-    margin left: 10%;
+    width: 40%;
+    display: block;
+    margin: auto;
 }
 
 
@@ -283,11 +283,6 @@ body {
     width: 32%;
 }
 
-.queson {
-    display: flex;
-
-    justify-content: first baseline;
-}
 
 .footer {
     background-color: gold;

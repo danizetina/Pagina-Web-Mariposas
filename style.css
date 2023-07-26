@@ -1,4 +1,4 @@
-button {
+.btn-toolbar{
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -7,17 +7,23 @@ button {
     vertical-align: middle;
     text-decoration: none;
     font-family: 'Pangolin', cursive;
-    font-size: 13px;
+}
+.buttons{
+    background-color:gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
 
 }
-
-button.learn-more {
+button.btn {
     font-weight: 600;
-    color: black;
+    color:#f17610;
+    font-size: 15px;
     text-transform: uppercase;
-    padding: 1.25em 2em;
+    padding: 1.2em 2em;
     background: #f7eebd;
-    border: 2px solid bla;
+    border: 0px solid black;
     border-radius: 0.75em;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -25,7 +31,7 @@ button.learn-more {
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-button.learn-more::before {
+button.btn::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -43,27 +49,27 @@ button.learn-more::before {
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-button.learn-more:hover {
+button.btn:hover {
     background: #f7eebd;
     -webkit-transform: translate(0, 0.25em);
     transform: translate(0, 0.25em);
 
 }
 
-button.learn-more:hover::before {
+button.btn:hover::before {
     -webkit-box-shadow: 0 0 0 2px #ee9530, 0 0.5em 0 0 #f7eebd;
     box-shadow: 0 0 0 2px #ee9530, 0 0.5em 0 0 #f7eebd;
     -webkit-transform: translate3d(0, 0.5em, -1em);
     transform: translate3d(0, 0.5em, -1em);
 }
 
-button.learn-more:active {
+button.btn:active {
     background: #ee9530;
     -webkit-transform: translate(0em, 0.75em);
     transform: translate(0em, 0.75em);
 }
 
-button.learn-more:active::before {
+button.btn:active::before {
     -webkit-box-shadow: 0 0 0 2px #ee9530, 0 0 #f7eebd;
     box-shadow: 0 0 0 2px #ee9530, 0 0 #f7eebd;
     -webkit-transform: translate3d(0, 0, -1em);
@@ -87,9 +93,10 @@ body {
 
 .title {
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     animation-duration: 3s;
+    font-family: 'Lobster Two', cursive;
 
 }
 
@@ -142,12 +149,8 @@ body {
     font-size: 13.4px;
 }
 
-.olo {
-    display: flex;
-    justify-content: space-between;
-}
 
-.card {
+.cardd {
     display: flex;
     height: 70px;
     width: 270px;
@@ -156,7 +159,7 @@ body {
 
 }
 
-.card svg {
+.cardd svg {
     position: absolute;
     display: flex;
     width: 60%;
@@ -169,10 +172,10 @@ body {
     cursor: pointer;
 }
 
-.card .social-link1,
-.card .social-link2,
-.card .social-link3,
-.card .social-link4 {
+.cardd .social-link1,
+.cardd .social-link2,
+.cardd .social-link3,
+.cardd .social-link4 {
     position: relative;
     display: flex;
     align-items: center;
@@ -185,11 +188,11 @@ body {
     border-radius: 50px;
 }
 
-.card svg {
+.cardd svg {
     transform: scale(1);
 }
 
-.card .social-link1:hover {
+.cardd .social-link1:hover {
     background: #f09433;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -198,7 +201,7 @@ body {
     animation: bounce_613 0.4s linear;
 }
 
-.card .social-link2:hover {
+.cardd .social-link2:hover {
     background-color: #00ccff;
     animation: bounce_613 0.4s linear;
 }
@@ -208,7 +211,7 @@ body {
     animation: bounce_613 0.4s linear;
 }
 
-.card .social-link4:hover {
+.cardd .social-link4:hover {
     background-color: #12a50b;
     animation: bounce_613 0.4s linear;
 }
@@ -232,7 +235,7 @@ body {
 }
 
 .p1 {
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
@@ -241,6 +244,9 @@ body {
 
 .title1 {
     text-align: center;
+    color: #f17610;
+    font-family: 'Handlee', cursive;
+    font-size: 40px;
 }
 
 .img1 {
@@ -285,5 +291,89 @@ body {
 
 
 .footer {
+    background-color: gold;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.card{
+    margin:1%;
+}
+
+.titulo{
+    font-size: 20px;
+    margin-left:2%;
+   
+
+}
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  /* border: none; */
+  border-radius: 50%;
+  background-color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: .5s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+  border: 2px solid #bbecff;
+}
+
+.logoIcon {
+  fill: white;
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background-color: #00acee;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #00acee;
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -20%;
+  transition-duration: .3s;
+}
+
+.Btn:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: .5s;
+}
+
+
+.list-group-color{
     background-color: gold;
 }
